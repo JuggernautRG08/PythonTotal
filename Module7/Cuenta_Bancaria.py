@@ -35,13 +35,13 @@ def inicio():
     print (mi_cliente)
     opcion=0
     while opcion != 'S':
-        print(f'*'*25)
-        print(f'-'*5 + 'Bienvenido al Banco de papel'+ '-'*5 )
-        print(f'*'*25)
-        print(f'-'*5 + 'Digite la letra para realizar una operación'+ '-'*5 )
-        print(f'ELige: Depositar (D)')
-        print(f'ELige: Retirar (R)')
-        print(f'ELige: Salir (S)')
+        print('*'*25)
+        print('-'*5 + 'Bienvenido al Banco de papel'+ '-'*5 )
+        print('*'*25)
+        print('-'*5 + 'Digite la letra para realizar una operación'+ '-'*5 )
+        print('ELige: Depositar (D)')
+        print('ELige: Retirar (R)')
+        print('ELige: Salir (S)')
         opcion=input()
         if opcion == 'D':
             monto_dep=int(input("Ingrese la cantidad a depositar: "))
@@ -50,6 +50,6 @@ def inicio():
             monto_ret = int(input("Ingrese la cantidad que desea retirar: "))
             mi_cliente.retirar(monto_ret)
         print(mi_cliente)
-    print(f'-'*5 + 'Gracias por operar en su banco de papel'+ '-'*5 )
+    print('-'*5 + 'Gracias por operar en su banco de papel'+ '-'*5 )
 
 inicio()
