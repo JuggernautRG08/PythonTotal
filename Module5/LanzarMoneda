@@ -1,0 +1,19 @@
+import random
+
+def lanzar_moneda():
+    resultado = random.choice(["Cara", "Cruz"])
+    return resultado
+
+def probar_suerte(resultado, lista_numeros):
+    if resultado == "Cara":
+        print("La lista se autodestruirá")
+        return []
+    elif resultado == "Cruz":
+        print("La lista fue salvada")
+        return lista_numeros
+
+# Ejemplo de uso
+lista_numeros = [1, 2, 3, 4, 5]
+resultado_lanzamiento = lanzar_moneda()
+lista_numeros = probar_suerte(resultado_lanzamiento, lista_numeros)
+print(lista_numeros)
