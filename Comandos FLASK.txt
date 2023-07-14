@@ -1,4 +1,12 @@
 py -3 -m venv .venv
 .venv\Scripts\activate
 .venv\Scripts\deactivate
-flask --app Presentación.OrdenesController.py run --debug
+----------------------------
+export FLASK_APP=app
+export FLASK_ENV=development
+flask run
+----------------------------
+flask run -p 5001
+----------------------------
+
+flask --app app.py run --debug
